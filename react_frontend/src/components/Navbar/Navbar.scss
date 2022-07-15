@@ -22,11 +22,11 @@
 
   img {
     width: 90px;
-    height: 20px;
+    height: 50px;
 
     @media screen and (min-width: 2000px) {
       width: 180px;
-      height: 40px;
+      height: 100px;
     }
   }
 }
@@ -40,38 +40,36 @@
   list-style: none;
   li {
     margin: 0 1rem;
-    
+
     flex-direction: column;
     cursor: pointer;
 
-    div{
-        height: 5px;
-        width: 5px;
-        background: transparent;
-        border-radius: 50%;
-  
-        margin-bottom: 5px;
-      }
+    div {
+      height: 5px;
+      width: 5px;
+      background: transparent;
+      border-radius: 50%;
 
-      a {
-            color: var(--color-gray);
-            text-decoration: none;
-            flex-direction: column;
-            text-transform: uppercase;
-            font-weight: 500;
-            transition: all 0.3s ease-in-out;
-        
-            &:hover {
-              color: var(--secondary-color);
-            }
-        
-          }
-        
-          &:hover{
-            div{
-                background: var(--secondary-color);
-            }
-          }
+      margin-bottom: 5px;
+    }
+
+    a {
+      color: var(--color-gray);
+      text-decoration: none;
+      flex-direction: column;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
+
+    &:hover {
+      div {
+        background: var(--secondary-color);
+      }
+    }
   }
 }
-

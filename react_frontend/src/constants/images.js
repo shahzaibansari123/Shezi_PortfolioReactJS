@@ -35,7 +35,7 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 
-import shahzaibpng from '../assets/shahzaibpng.png'
+import shahzaibasd from '../assets/shahzaibasd.png'
 
 export default {
   email,
@@ -71,5 +71,5 @@ export default {
   nb,
   skype,
   spotify,
-  shahzaibpng,
+  shahzaibasd,
 };
