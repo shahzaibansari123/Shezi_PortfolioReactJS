@@ -1,0 +1,43 @@
+#home {
+  position: relative;
+  background: url("../../assets/bgIMG.png");
+  //cover lazmi kren jb bhi background me koi image use kre hon
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+
+  .app__wrapper {
+    padding: 0;
+
+    .copyright {
+      display: none;
+    }
+  }
+}
+
+.app__header{
+    flex: 100;
+    width: 100%;
+    height: 100%;
+    //explicity rkh rhe ku k responsve desin me change krengy
+    flex-direction: row;
+     padding: 6rem 2rem 0;
+
+
+     @media screen and (min-width: 2000px) {
+        padding-top: 8rem;
+     }
+
+     
+     @media screen and (max-width: 1200px) {
+        flex-direction: column;
+    }
+
+
+    
+    @media screen and (max-width: 450px) {
+        padding: 6rem 1rem 2rem;
+    }
+
+
+}
