@@ -37,6 +37,15 @@ import spotify from '../assets/spotify.png';
 
 import shahzaiblogo from '../assets/shahzaiblogo.png'
 
+import shahzaibprofile from '../assets/shahzaibprofile.png'
+
+import p1 from '../assets/p1.png'
+
+import p2 from '../assets/p2.png'
+
+
+import p3 from '../assets/p3.png'
+
 export default {
   email,
   mobile,
@@ -72,4 +81,8 @@ export default {
   skype,
   spotify,
   shahzaiblogo,
+  shahzaibprofile,
+  p1,
+  p2,
+  p3,
 };
