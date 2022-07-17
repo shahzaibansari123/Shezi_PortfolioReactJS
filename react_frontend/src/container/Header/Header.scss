@@ -101,3 +101,28 @@
         align-items: flex-start;
     }
 }
+
+.app__header-circles{
+    flex: 0.75;
+    flex-direction: column;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    margin: 1rem;
+
+    div{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: var(--white-color);
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+
+
+        img{
+            width: 60%;
+            height: 60%;
+        }
+
+    }
+}

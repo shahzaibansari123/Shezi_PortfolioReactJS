@@ -46,6 +46,14 @@ import p2 from '../assets/p2.png'
 
 import p3 from '../assets/p3.png'
 
+
+import reactmy from '../assets/reactmy.png'
+
+import htmlcssjsmy from '../assets/htmlcssjsmy.png'
+
+import nodemy from '../assets/nodemy.png'
+
+
 export default {
   email,
   mobile,
@@ -85,4 +93,8 @@ export default {
   p1,
   p2,
   p3,
+  reactmy,
+  htmlcssjsmy,
+  nodemy,
+
 };
