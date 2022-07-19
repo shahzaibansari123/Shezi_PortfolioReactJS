@@ -8,6 +8,7 @@ const abouts=[
   {title: "Front-End Developer", description: "I am a good front-end developer with a passion for creating beautiful front-end for the web/mobile Apps ", imgUrl: images.frontmy},
   {title: "Mobile App Developer", description: "I am a good Mobile App developer with a passion for creating beautiful and native applications", imgUrl: images.mobmy},
   {title: "Back-End Developer", description: "I am a good back-end developer with a passion for building functional back-end for the websites", imgUrl: images.backmy},
+  
 ]
 
 
