@@ -53,6 +53,11 @@ import htmlcssjsmy from '../assets/htmlcssjsmy.png'
 
 import nodemy from '../assets/nodemy.png'
 
+import webmy from '../assets/webmy.png'
+import mobmy from '../assets/mobmy.png'
+import frontmy from '../assets/frontmy.png'
+import backmy from '../assets/backmy.png'
+
 
 export default {
   email,
@@ -96,5 +101,9 @@ export default {
   reactmy,
   htmlcssjsmy,
   nodemy,
+  webmy,
+  mobmy,
+  frontmy,
+  backmy,
 
 };

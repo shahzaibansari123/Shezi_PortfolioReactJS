@@ -1,25 +1,20 @@
 import React, {useState, useEffect} from 'react'
 import './About.scss'
 import {motion} from 'framer-motion'
+import {images} from '../../constants'
 
 const abouts=[
-  {title: "web developer", description: "I am a good web developer", imgUrl: ' '},
-  {title: "web design", description: "I am a good web developer", imgUrl: ' '},
-  {title: "UI/UX", description: "I am a good web developer", imgUrl: ' '},
-  {title: "web Animations", description: "I am a good web developer", imgUrl: ' '},
+  {title: "Web Developer", description: "I am a good web developer with a passion for creating beautiful, attractive and functional web applications", imgUrl: images.webmy},
+  {title: "Front-End Developer", description: "I am a good front-end developer with a passion for creating beautiful front-end for the web/mobile Apps ", imgUrl: images.frontmy},
+  {title: "Mobile App Developer", description: "I am a good Mobile App developer with a passion for creating beautiful and native applications", imgUrl: images.mobmy},
+  {title: "Back-End Developer", description: "I am a good back-end developer with a passion for building functional back-end for the websites", imgUrl: images.backmy},
 ]
 
 
 const About = () => {
   return (
     <>
-    <h2 className="head-text">
-      I Know that   
-      <span> Good Design </span>
-      <br />
-       means
-      <span> Good Business</span>
-    </h2>
+      <h2 className="head-text">I Know that <span>Good Apps</span> <br />means  <span>Good Business</span></h2>
 
     <div className="app__profiles">
       {abouts.map((about, index)=>(
@@ -32,7 +27,7 @@ const About = () => {
         >
           <img src={about.imgUrl} alt={about.title} />
           <h2 className="bold-text" style={{marginTop: 20}}>{about.title}</h2>
-          <p className="p-text" style={{marginTop: 10}}>{about.description}</p>
+          <p className="p-text" style={{marginTop: 10 }}>{about.description}</p>
 
         </motion.div>
       ))}
