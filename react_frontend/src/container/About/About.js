@@ -4,6 +4,7 @@ import {motion} from 'framer-motion'
 import {images} from '../../constants'
 
 import {urlFor, client} from '../../client'
+import {AppWrap} from '../../wrapper'
 
 // const abouts=[
 //   {title: "Web Developer", description: "I am a good web developer with a passion for creating beautiful, attractive and functional web applications", imgUrl: images.webmy},
@@ -52,4 +53,4 @@ const About = () => {
   )
 }
 
-export default About
+export default AppWrap(About, 'About')
