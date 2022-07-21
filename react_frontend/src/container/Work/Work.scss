@@ -25,6 +25,39 @@
 
         &:hover{
             background-color: var(--secondary-color);
+            color: #fff;
         }
+
+        @media screen and (min-width: 2000px){
+            padding: 1rem 2rem;
+            border-radius: 0.85rem;
+            
+        }
+    }
+
+    .item-active{
+        background-color: var(--secondary-color);
+        color: #fff;
+    
+    }
+}
+
+
+.app__work-portfolio{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+
+
+
+    .app__work-item{
+    width: 270px;
+        flex-direction: column;
+        margin: 2rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background-color: #fff;
+        color: #000;
     }
 }
