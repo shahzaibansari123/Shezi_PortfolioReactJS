@@ -9,7 +9,13 @@ import "./Skills.scss";
 const Skills = () => {
   return 
   <>
-  
+  <h2 className="head-text">Skills and Experience</h2>
+  <div className="app__skills-container">
+    <motion.div className="app">
+
+    </motion.div>
+
+  </div>
   </>;
 };
 
