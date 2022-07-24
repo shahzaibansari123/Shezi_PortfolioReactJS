@@ -30,7 +30,15 @@ const Skills = () => {
   <div className="app__skills-container">
     <motion.div className="app__skills-list">
 
-{/* {skills.map} */}
+{skills.map((skill)=>(
+  <motion.div className="app__skills-item app__flex"
+  whileInView={{opacity: [0, 1]}}
+  transition={{ duration: 0.5}}
+  
+  >
+
+  </motion.div>
+))}
     </motion.div>
 
   </div>
