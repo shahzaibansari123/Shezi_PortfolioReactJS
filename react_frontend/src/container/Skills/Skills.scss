@@ -40,7 +40,7 @@
 }
 
 
-app__skills-item{
+.app__skills-item{
     flex-direction: column;
     text-align: center;
     margin: 1rem;
@@ -53,7 +53,8 @@ app__skills-item{
         background-color: #fff;
 
         img{
-            widht:
+            width: 50%;
+            height: 50%;
         }
     }
 
