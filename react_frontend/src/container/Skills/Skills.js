@@ -15,6 +15,7 @@ const Skills = () => {
     const skillsQuery = '*[_type == "skills"]';
 
     client.fetch(query).then((data) => {
+      // console.log(data)
       setExperience(data);
     });
 
@@ -28,7 +29,7 @@ const Skills = () => {
       <h2 className="head-text">Skills and Experience</h2>
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
-          {skills.map((skill) => (
+          {skills?.map((skill) => (
             <motion.div
               className="app__skills-item app__flex"
               whileInView={{ opacity: [0, 1] }}
@@ -47,33 +48,40 @@ const Skills = () => {
         </motion.div>
 
         <motion.div className="app__skills-exp">
-          {experience.works.map((work)=>(
+          {/* {console.log('here' , experience.works)} */}
+          {experience?.map((work) => (
+              <motion.div className="app__skills-exp-item"
+              key={experience.year}
+              >
+                <div className="app__skills-exp-year">
+                  <p className="bold-text">{experience.year}</p>
+  
+                </div>
+  
+              </motion.div>
+            // <>
+            //   <motion.div
+            //     className="app__skills-exp-work"
+            //     whileInView={{ opacity: [0, 1] }}
+            //     transition={{ duration: 0.5 }}
+            //     data-tip
+            //     data-for={work.name}
+            //     key={work.name}
+            //   >
+            //     <h4 className="bold-text">{work.name}</h4>
+            //     <p className="p-text">{work.company}</p>
+            //   </motion.div>
 
-            <>
-            <motion.div
-              className="app__skills-exp-work"
-              whileInView={{ opacity: [0, 1] }}
-              transition={{ duration: 0.5 }}
-              data-tip
-              data-for={work.name}
-              
-              key={work.name}
-            
-            
-            >
-
-              <h4 className="bold-text">{work.name}</h4>
-              <p className="p-text">{work.company}</p>
-
-
-
-            </motion.div>
-
-            <ReactTooltip></ReactTooltip>
-            </>
+            //   <ReactTooltip
+            //     id={work.name}
+            //     effect="solid"
+            //     arrowColor="#fff"
+            //     className="skills-tooltip"
+            //   >
+            //     {work.desc}
+            //   </ReactTooltip>
+            // </>
           ))}
-          
-
         </motion.div>
       </div>
     </>
