@@ -7,10 +7,9 @@ import { urlFor, client } from "../../client";
 import "./Skills.scss";
 
 const Skills = () => {
-  
-  const [experience, setExperience]=useState([])
-  const [skills,setSkills]=useState([])
-  
+  const [experience, setExperience] = useState([]);
+  const [skills, setSkills] = useState([]);
+
   useEffect(() => {
     const query = '*[_type == "experiences"]';
     const skillsQuery = '*[_type == "skills"]';
@@ -25,28 +24,60 @@ const Skills = () => {
   }, []);
 
   return (
-  <>
-  <h2 className="head-text">Skills and Experience</h2>
-  <div className="app__skills-container">
-    <motion.div className="app__skills-list">
+    <>
+      <h2 className="head-text">Skills and Experience</h2>
+      <div className="app__skills-container">
+        <motion.div className="app__skills-list">
+          {skills.map((skill) => (
+            <motion.div
+              className="app__skills-item app__flex"
+              whileInView={{ opacity: [0, 1] }}
+              transition={{ duration: 0.5 }}
+              key={skill.name}
+            >
+              <div
+                className="app__flex"
+                style={{ backgroundColor: skill.bgColor }}
+              >
+                <img src={urlFor(skill.icon)} alt={skill.name} />
+              </div>
+              <p className="p-text">{skill.name}</p>
+            </motion.div>
+          ))}
+        </motion.div>
 
-{skills.map((skill)=>(
-  <motion.div className="app__skills-item app__flex"
-  whileInView={{opacity: [0, 1]}}
-  transition={{ duration: 0.5}}
-  key={skill.name}
-  >
-<div className="app__flex" style={{backgroundColor: skill.bgColor}}>
-  <img src={urlFor(skill.icon)} alt={skill.name}/>
-</div>
-<p className="p-text">{skill.name}</p>
-  </motion.div>
-))}
-    </motion.div>
+        <motion.div className="app__skills-exp">
+          {experience.works.map((work)=>(
 
-  </div>
-  </>
-  )
+            <>
+            <motion.div
+              className="app__skills-exp-work"
+              whileInView={{ opacity: [0, 1] }}
+              transition={{ duration: 0.5 }}
+              data-tip
+              data-for={work.name}
+              
+              key={work.name}
+            
+            
+            >
+
+              <h4 className="bold-text">{work.name}</h4>
+              <p className="p-text">{work.company}</p>
+
+
+
+            </motion.div>
+
+            <ReactTooltip></ReactTooltip>
+            </>
+          ))}
+          
+
+        </motion.div>
+      </div>
+    </>
+  );
 };
 
 export default Skills;
