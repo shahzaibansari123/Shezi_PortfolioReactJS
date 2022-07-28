@@ -74,7 +74,7 @@ const Testimonial = () => {
           </div>
         </>
       )}
-      <div className="app__testimonials-brands">
+      <div className="app__testimonial-brands">
         {brands.map((brand)=>(
           <motion.div 
           whileInView={{opacity: [0,1]}}
