@@ -21,6 +21,13 @@ const Work = () => {
     });
   }, []);
 
+  // useEffect(() => {
+   
+  //     setFilterWork(works.filter((work) => work.tags.includes("Web App")));
+    
+  // }, [])
+  
+
   const handleWorkFilter = (item) => {
     setActiveFilter(item);
     setAnimateCard([{ y: 100, opacity: 0 }]);
@@ -42,7 +49,7 @@ const Work = () => {
         My Creative <span>Portfolio</span> Section
       </h2>
       <div className="app__work-filter">
-        {["All", "Web App", "Mobile App", "UI/UX"].map(
+        {["All", "Web App", "Mobile App", "UI/UX", "Others"].map(
           (item, index) => (
             <div
               key={index}
