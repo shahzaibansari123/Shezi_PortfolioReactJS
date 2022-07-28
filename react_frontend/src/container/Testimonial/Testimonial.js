@@ -26,9 +26,15 @@ const Testimonial = () => {
   }, []);
 
   return (
-    <div>
-      Testimonial
+   <>
+   {testimonials.length && (
+    <>
+    <div className="app__testimonials-items">
+
     </div>
+    </>
+   )}
+   </>
   )
 }
 
