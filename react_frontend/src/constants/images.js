@@ -57,7 +57,7 @@ import webmy from '../assets/webmy.png'
 import mobmy from '../assets/mobmy.png'
 import frontmy from '../assets/frontmy.png'
 import backmy from '../assets/backmy.png'
-
+import mymail from '../assets/mymail.png'
 
 export default {
   email,
@@ -105,5 +105,6 @@ export default {
   mobmy,
   frontmy,
   backmy,
+  mymail,
 
 };
