@@ -10,20 +10,36 @@ const Footer = () => {
   const [formData, setFormData] = useState({
     name: " ",
     email: " ",
-    message: "",
+    message: " ",
   });
 
-  const[isFormSubmitted, setIsFormSubmitted] = useState(false)
-  const [loading, setLoading] = useState(false)
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const [name, email, message] = formData;
+  const { name, email, message } = formData;
 
-  const handleChangeInput=(e)=>{
-    const {name, value}=e.target.value;
+  const handleChangeInput = (e) => {
+    const { name, value } = e.target.value;
 
-    setFormData(...formData, [name]: value)
+    setFormData({ ...formData, [name]: value });
+  };
 
-  }
+  const handleSubmit = () => {
+    setLoading(true);
+
+    const contact = {
+      _type: "contact",
+      name: "name",
+      email: "email",
+      message: "message",
+    };
+
+    client.create(contact).then(() => {
+      setLoading(false);
+      setFormData(true);
+    });
+  };
+
   return (
     <>
       <h2 className="head-text">Take a coffee and Chat with Me</h2>
