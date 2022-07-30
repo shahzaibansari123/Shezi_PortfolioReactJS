@@ -4,11 +4,30 @@
     width: 100%;
 }
 
-,app__footer-cards{
+.app__footer-cards{
     display: flex;
     width: 60%;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap-reverse;
     margin: 4rem 2rem 2rem;
+
+    .app__footer-card{
+        min-width: 290px;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+         margin: 1rem 0;
+         padding: 1rem;
+         border-radius: 10px;
+         cursor: pointer;
+         background-color: #fef4f5;
+         transition: all 0.3s ease-in-out;
+
+         img{
+            height: 40px;
+            width: 40px;
+         }
+    }
 }
