@@ -36,7 +36,8 @@ const Footer = () => {
 
     client.create(contact).then(() => {
       setLoading(false);
-      setFormData(true);
+      setIsFormSubmitted(true)
+      // setFormData(true);
     });
   };
 
@@ -67,7 +68,7 @@ const Footer = () => {
               placeholder = "Your Name"
               name="name"
               value={name}
-              onClick={handleChangeInput}
+              onChange={handleChangeInput}
             />
         
           </div>
@@ -79,7 +80,7 @@ const Footer = () => {
               placeholder="Your Email"
               name="email"
               value={email}
-              onClick={handleChangeInput}
+              onChange={handleChangeInput}
             />
           </div>
           <div>
@@ -97,7 +98,7 @@ const Footer = () => {
         </div>
       ) : (
         <div>
-          <h3 className="head-text">Thank you forgetting in touch</h3>
+          <h3 className="head-text">Thank you forgetting in touch!</h3>
         </div>
       )}
     </>
