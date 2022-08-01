@@ -64,6 +64,7 @@ const Footer = () => {
             <input
               className="p-text"
               type="text"
+              // placeholder="Your Name"
               placeholder="Your Name"
               name="name"
               value={name}

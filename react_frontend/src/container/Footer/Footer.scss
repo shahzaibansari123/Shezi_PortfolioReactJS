@@ -63,3 +63,29 @@
 .app__footer-cards .app__footer-card:last-child{
    background-color: #dde4f0;
 }
+
+.app__footer-form{
+   width: 60%;
+   margin: 1rem 2rem;
+   flex-direction: column;
+
+
+   div{
+      width: 100%;
+      border-radius: 10px;
+      margin: 0.75rem 0;
+      cursor: pointer;
+      background-color: var(--primary-color);
+      transition: all 0.3s ease-in-out;
+
+      input, textarea{
+         width: 100%;
+         padding: 0.95rem;
+         border: none;
+         border-radius: 7px;
+         font-family: var(--font-base);
+         background-color: var(--primary-color);
+      }
+   }
+
+}
