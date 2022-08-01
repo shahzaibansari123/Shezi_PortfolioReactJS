@@ -8,9 +8,9 @@ import "./Footer.scss";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
-    name: " ",
-    email: " ",
-    message: " ",
+    name: "",
+    email: "",
+    message: "",
   });
 
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
@@ -19,7 +19,7 @@ const Footer = () => {
   const { name, email, message } = formData;
 
   const handleChangeInput = (e) => {
-    const { name, value } = e.target.value;
+    const { name, value } = e.target;
 
     setFormData({ ...formData, [name]: value });
   };
@@ -64,12 +64,12 @@ const Footer = () => {
             <input
               className="p-text"
               type="text"
-              // placeholder="Your Name"
-              placeholder="Your Name"
+              placeholder = "Your Name"
               name="name"
               value={name}
               onClick={handleChangeInput}
             />
+        
           </div>
 
           <div className="app__flex">
@@ -86,7 +86,7 @@ const Footer = () => {
             <textarea
               className="p-text"
               name="message"
-              placeholder="Your Message"
+              placeholder =  "Your Message"
               value={message}
               onChange={handleChangeInput}
             />
