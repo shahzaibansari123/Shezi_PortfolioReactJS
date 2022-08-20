@@ -58,6 +58,7 @@ import mobmy from '../assets/mobmy.png'
 import frontmy from '../assets/frontmy.png'
 import backmy from '../assets/backmy.png'
 import mymail from '../assets/mymail.png'
+import cv from '../assets/Shahzaib.pdf'
 
 export default {
   email,
