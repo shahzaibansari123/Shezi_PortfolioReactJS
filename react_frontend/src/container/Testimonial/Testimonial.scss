@@ -22,7 +22,7 @@
     object-fit: cover;
   }
 
-  @media screen and(min-width: 2000px) {
+  @media screen and (min-width: 2000px) {
     min-height: 450px;
 
     img{
@@ -32,13 +32,13 @@
     
   }
 
-  @media screen and(max-width: 850px) {
+  @media screen and (max-width: 850px) {
     width: 100%;
 
     
   }
 
-  @media screen and(max-width: 600px) {
+  @media screen and (max-width: 600px) {
     flex-direction: column;
     
     

@@ -107,5 +107,6 @@ export default {
   frontmy,
   backmy,
   mymail,
+  cv,
 
 };
