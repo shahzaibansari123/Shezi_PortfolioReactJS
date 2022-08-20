@@ -164,3 +164,46 @@
     display: none;
   }
 }
+
+.CVbtn1 {
+  width: 100px;
+  height: 30px;
+  background-color: #434780;
+  border-radius: 10px;
+  font-style: var(--font-base);
+  border-color: transparent;
+  color: var(--primary-color);
+  font-size: 0.8rem;
+
+  padding: 2px;
+
+  &:hover {
+    color: lightblue;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
+
+
+.CVbtn2 {
+  width: 100px;
+  height: 30px;
+  background-color: #434780;
+  border-radius: 10px;
+  font-style: var(--font-base);
+  border-color: transparent;
+  color: var(--primary-color);
+  font-size: 0.8rem;
+margin-left: 10px;
+  padding: 2px;
+
+  &:hover {
+    color: lightblue;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+}

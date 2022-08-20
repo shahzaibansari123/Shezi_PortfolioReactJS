@@ -11,7 +11,7 @@ const App = () => {
         <title>new</title>
       </Helmet> */}
       
-      <DownloadCV />
+      {/* <DownloadCV /> */}
       <Navbar />
       <Header />
       <About />

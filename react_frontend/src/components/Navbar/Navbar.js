@@ -20,6 +20,9 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+      <a href={images.cv} download rel="noreferrer">
+        <button className="CVbtn1">Download CV</button>
+      </a>
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
         {toggle && (
@@ -28,15 +31,18 @@ const Navbar = () => {
             transition={{ duration: 0.85, ease: "easeOut" }}
           >
             <HiX onClick={() => setToggle(false)} />
-            <ul >
-            {["Home", "About", "Work", "Skills", "Contact"].map((item) => (
-              <li key={item}>
-                <a href={`#${item}`} onClick={() => setToggle(false)}>
-                  {item}
-                </a>
-              </li>
-            ))}
-            </ul >
+            <ul>
+              {["Home", "About", "Work", "Skills", "Contact"].map((item) => (
+                <li key={item}>
+                  <a href={`#${item}`} onClick={() => setToggle(false)}>
+                    {item}
+                  </a>
+                </li>
+              ))}
+              <a href={images.cv} download rel="noreferrer">
+                <button className="CVbtn2">Download CV</button>
+              </a>
+            </ul>
           </motion.div>
         )}
       </div>
