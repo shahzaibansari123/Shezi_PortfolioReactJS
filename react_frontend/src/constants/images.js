@@ -58,7 +58,7 @@ import mobmy from '../assets/mobmy.png'
 import frontmy from '../assets/frontmy.png'
 import backmy from '../assets/backmy.png'
 import mymail from '../assets/mymail.png'
-import ShahzaibCV from '../assets/ShahzaibAnsariCVResume.pdf'
+import ShahzaibAnsariCVResume from '../assets/ShahzaibAnsariCVResume.pdf'
 
 export default {
   email,
@@ -107,6 +107,6 @@ export default {
   frontmy,
   backmy,
   mymail,
-  ShahzaibCV,
+  ShahzaibAnsariCVResume,
 
 };
