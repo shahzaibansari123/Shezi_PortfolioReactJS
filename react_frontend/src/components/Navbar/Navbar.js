@@ -20,7 +20,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <a href={images.ShahzaibCV} download rel="noreferrer">
+      <a href={images.ShahzaibAnsariCVResume} download rel="noreferrer">
         <button className="CVbtn1">Download CV</button>
       </a>
       <div className="app__navbar-menu">
